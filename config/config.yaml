@@ -1,0 +1,20 @@
+mainConfig:
+  appName: your app name
+  host: 0.0.0.0
+  port: 8000
+
+mysqlConfig:
+  host: 127.0.0.1
+  port: 3307
+  user: windows
+  password: 123456
+  databaseName: doovvvdp
+
+redisConfig:
+  host: 127.0.0.1
+  port: 6379 
+  password: ""
+  db: 0
+
+logConfig:
+  path: ./test.log
