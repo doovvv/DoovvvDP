@@ -19,17 +19,16 @@ type TbUser struct {
 func (TbUser) TableName() string {
 	return "tb_user"
 }
-func CheckUserExist(phone string) bool {
+func CheckUserNotExist(phone string)(TbUser, bool) {
 	var user TbUser
 	err := mysql.DB.Where("phone = ?", phone).First(&user).Error
-	return err == gorm.ErrRecordNotFound
+	return user,err == gorm.ErrRecordNotFound
 }
-func CreateUserWithPhone(phone string) error {
-	//todo
+func CreateUserWithPhone(phone string)(TbUser, error ){
 	user := TbUser{
 		Phone: phone,
 		NickName: utils.USER_NICK_NAME_PREFIX+utils.RandomString(10),
 	}
 	err := mysql.DB.Create(&user).Error
-	return err
+	return user,err
 }

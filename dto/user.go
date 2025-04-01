@@ -4,3 +4,9 @@ type UserDTO struct {
 	Code string `json:"code"`
 	Password string `json:"password"`
 }
+type UserVo struct{
+	Id uint64 `json:"id"`
+	NickName string `json:"nickName"`
+	Icon string `json:"icon"`
+
+}

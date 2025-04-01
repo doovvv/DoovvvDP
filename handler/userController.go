@@ -27,3 +27,15 @@ func Login(c *gin.Context){
 	c.JSON(200, result)
 
 }
+func Me(c *gin.Context){
+	result := &dto.Result{}
+	user,ok := c.Get("user")
+	if !ok{
+		result.Fail("未找到user信息")
+		c.JSON(200,result)
+		return
+	}
+	// fmt.Println(user)
+	result.OkWithData(user)
+	c.JSON(200,result)
+}
