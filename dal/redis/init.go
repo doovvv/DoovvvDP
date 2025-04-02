@@ -1,0 +1,20 @@
+package redis
+
+import (
+	"context"
+	"doovvvDP/config"
+	"strconv"
+
+	"github.com/redis/go-redis/v9"
+)
+var RDB *redis.Client
+var RCtx = context.Background()
+func RedisInit(){
+	RDB = redis.NewClient(&redis.Options{
+		Addr:     config.MyConfig.RedisConfig.Host + ":" + strconv.Itoa(config.MyConfig.RedisConfig.Port),
+		Password: config.MyConfig.RedisConfig.Password,
+		DB:       config.MyConfig.RedisConfig.DB,  
+	})
+
+	
+}
