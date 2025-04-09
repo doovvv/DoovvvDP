@@ -1,0 +1,150 @@
+
+2025/04/09 11:20:14 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.945ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[7.304ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.234ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.097ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[14.972ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.138ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.699ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[41.944ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[36.533ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[40.802ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[42.460ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[36.835ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[40.920ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[39.332ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[41.861ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[40.980ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:21:53 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.640ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:23:09 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.439ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:23:30 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.181ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[4.604ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[5.070ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.232ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[12.589ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.484ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[16.510ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.265ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:28:08 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.526ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:28:29 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[0.749ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[4.253ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[6.644ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.591ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[0.870ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.793ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.433ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.579ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[0.851ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[36.218ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[37.432ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[8.954ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[0.974ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[18.080ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[5.431ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[10.399ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.045ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[0.752ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[29.172ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:38:42 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[9.136ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:38:42 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[33.971ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:38:42 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[37.933ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/09 11:46:43 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[6.552ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1

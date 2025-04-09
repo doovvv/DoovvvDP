@@ -32,5 +32,14 @@ func RouterInit(){
 	{
 		authUserRouter.GET("/me",handler.Me)
 	}
+	shopRouter := r.Group("/shop")
+	{
+		shopRouter.GET("/:id",handler.QueryShopById)
+		shopRouter.PUT("",handler.UpdateShop)
+	}
+	shopTypeRouter := r.Group("/shop-type")
+	{
+		shopTypeRouter.GET("/list",handler.QueryShopTypeList)
+	}
 	r.Run(":8081")
 }
