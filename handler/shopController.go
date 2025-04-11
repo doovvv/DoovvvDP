@@ -17,7 +17,7 @@ func QueryShopById(c *gin.Context){
 		c.JSON(200,result)
 		return
 	}
-	result = v1.QueryShopById(id)
+	result = v1.QueryShopById(uint64(id))
 	c.JSON(200,result)
 
 }

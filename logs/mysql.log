@@ -148,3 +148,12 @@
 
 2025/04/09 11:46:43 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
 [6.552ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/11 11:20:48 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[137.950ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/11 11:45:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[8.596ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/11 11:51:57 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[8.285ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
