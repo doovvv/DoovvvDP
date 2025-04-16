@@ -1,159 +1,1662 @@
 
-2025/04/09 11:20:14 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[2.945ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.203ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[7.304ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[5.307ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[2.234ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.845ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[2.097ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.257ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[14.972ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.375ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[2.138ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.744ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.699ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[1.259ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[41.944ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.051ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[36.533ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[2.317ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555005679144960)
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[40.802ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.089ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[42.460ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.967ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[36.835ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.389ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[40.920ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.646ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[39.332ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.957ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[41.861ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[5.063ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[40.980ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.386ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:21:53 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.640ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.967ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:23:09 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.439ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.844ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:23:30 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[2.181ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.042ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[4.604ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.010ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[5.070ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.232ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[2.232ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.543ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[12.589ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.992ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[2.484ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.800ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[16.510ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[42.464ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
 
-2025/04/09 11:26:27 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.265ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[12.956ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:28:08 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.526ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.828ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555005851111424)
 
-2025/04/09 11:28:29 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[0.749ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[56.217ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[4.253ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.909ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555005905637376)
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[6.644ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[66.620ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.591ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.227ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555005951774720)
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[0.870ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[75.977ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.793ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.819ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555005989523456)
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.433ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[85.858ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[2.579ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.890ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006035660800)
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[0.851ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[96.122ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[36.218ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.964ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006090186752)
 
-2025/04/09 11:30:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[37.432ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[104.647ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
 
-2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[8.954ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.321ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[0.974ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.429ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[18.080ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[81.191ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[5.431ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.613ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[10.399ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.737ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[1.045ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.266ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006140518400)
 
-2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[0.752ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.742ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:34:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[29.172ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.905ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:38:42 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[9.136ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.294ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:38:42 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[33.971ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.287ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:38:42 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[37.933ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.342ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/09 11:46:43 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[6.552ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.115ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/11 11:20:48 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[137.950ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.883ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/11 11:45:38 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[8.596ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.236ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
 
-2025/04/11 11:51:57 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
-[8.285ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.212ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.656ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[121.309ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[53.515ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.421ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[69.432ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[54.134ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006220210176)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[69.897ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[71.281ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[71.845ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[72.031ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[71.148ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.958ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[72.821ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.048ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[72.284ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[71.961ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.279ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[68.501ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.797ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.567ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.977ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.370ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[73.728ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.896ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.917ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.527ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.908ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.823ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[73.945ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[74.835ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.458ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.175ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.115ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[61.348ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.375ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[75.639ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.387ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.584ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.546ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.201ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.463ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.690ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[5.027ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[5.221ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[183.221ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[5.390ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[5.764ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.362ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006488645632)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.714ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[7.503ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[8.533ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[8.118ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.318ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.494ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.485ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[9.053ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[8.631ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.684ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.404ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[6.652ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[7.803ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.595ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.996ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[194.044ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.665ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[2.113ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006534782976)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.054ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.153ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.258ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.919ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.967ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[198.344ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.616ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.627ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006576726016)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.095ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.063ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.471ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.705ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.051ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[206.747ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.385ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.905ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006618669056)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.493ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.704ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.225ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.128ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.284ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.316ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.918ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[215.955ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.349ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.041ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.008ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006660612096)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.987ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.296ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[236.199ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[14.711ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.815ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006744498176)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[243.713ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.805ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006782246912)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[251.061ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.942ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006815801344)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[258.263ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.651ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006853550080)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[263.845ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.799ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006882910208)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[268.377ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.811ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006916464640)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.596ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.482ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.194ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.456ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.903ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.331ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[279.543ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[4.444ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[6.512ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555006966796288)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[9.154ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[11.888ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[11.106ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[11.676ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[11.914ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[13.461ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[13.163ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[13.667ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[13.346ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[15.896ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[16.539ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[17.431ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[21.008ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[21.359ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[22.630ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[15.713ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[27.759ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[23.195ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[22.749ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[23.741ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[23.712ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[25.226ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[7.542ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[27.066ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[17.254ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[21.372ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[28.796ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[28.928ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[23.183ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[30.923ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[30.766ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[31.339ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[17.893ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[31.583ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[33.729ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[24.476ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[5.788ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[24.675ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[24.621ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[27.828ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[27.123ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[41.211ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.081ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[1.048ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.865ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.886ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[319.263ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.927ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.709ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.933ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[2.024ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.192ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[19.497ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[31.500ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[33.266ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[2.505ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007134568448)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.701ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.843ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[317.289ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.980ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007184900096)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.400ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.297ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[259.792ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.634ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007231037440)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.549ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.848ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[271.026ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.883ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007281369088)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[3.690ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[2.024ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.377ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[1.541ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.928ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[1.054ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.374ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[282.824ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.816ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007340089344)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.955ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.363ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.325ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.338ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83 Error 1040: Too many connections
+[0.238ms] [rows:-] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[293.931ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.718ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007373643776)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[297.302ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.717ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007411392512)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[304.692ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.311ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007449141248)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[313.539ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.738ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007491084288)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[322.726ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.820ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007528833024)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[333.614ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.633ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007574970368)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[341.669ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.832ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007612719104)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[350.459ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.648ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007650467840)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[364.698ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.829ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007675633664)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[300.536ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.804ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007713382400)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[309.321ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.830ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007746936832)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[317.533ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.978ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007784685568)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[325.164ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.930ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007822434304)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[332.292ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.874ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007860183040)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[340.112ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.393ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007889543168)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[349.321ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.894ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007927291904)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[356.940ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.024ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007965040640)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[364.357ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.801ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555007998595072)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[373.839ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.226ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008036343808)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[381.295ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.906ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008074092544)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[389.987ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.947ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008111841280)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[397.191ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.212ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008141201408)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[405.418ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.077ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008178950144)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[414.284ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.233ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008216698880)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[422.893ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.980ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008250253312)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[433.289ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.338ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008292196352)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[445.844ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.960ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008342528000)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[452.493ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.248ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008380276736)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[461.903ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.368ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008418025472)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[471.878ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.267ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008455774208)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[479.717ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.563ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008493522944)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[489.593ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.366ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008535465984)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[499.850ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.165ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008581603328)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[509.220ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.562ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008619352064)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[519.762ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.980ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008665489408)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[529.116ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.961ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008699043840)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[538.137ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.065ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008745181184)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[548.018ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.041ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008787124224)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[559.121ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.248ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008824872960)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[565.642ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.201ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008854233088)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[575.335ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.611ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008900370432)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[587.614ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.467ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008959090688)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[595.816ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.299ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555008992645120)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[603.017ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.569ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009026199552)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[614.478ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.274ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009063948288)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[620.724ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.430ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009097502720)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[629.411ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.195ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009135251456)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[639.478ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.723ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009177194496)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[648.297ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.251ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009214943232)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[656.078ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[6.626ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009252691968)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[669.774ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.236ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009311412224)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[680.752ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.254ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009361743872)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[694.890ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.100ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009420464128)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[706.431ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.957ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009466601472)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[716.566ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.215ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009508544512)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[728.329ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.834ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009558876160)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[740.532ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.783ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009600819200)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[750.484ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.886ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009651150848)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[761.559ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.016ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009697288192)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[771.769ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.925ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009743425536)
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[782.945ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:58 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.831ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009789562880)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[795.472ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.944ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009839894528)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[807.363ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.825ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009890226176)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[819.186ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.103ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009944752128)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[829.765ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.894ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555009990889472)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[843.001ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.244ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010049609728)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[855.394ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.221ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010099941376)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[868.443ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.029ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010154467328)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[877.229ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.870ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010200604672)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[890.593ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.034ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010263519232)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[896.549ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.767ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010305462272)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[909.439ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.261ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010364182528)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[917.472ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.858ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010406125568)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[924.816ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.024ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010443874304)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[932.162ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.222ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010477428736)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[939.658ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.276ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010515177472)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[947.913ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.984ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010552926208)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[954.657ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.904ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010590674944)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[963.225ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.100ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010628423680)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[965.644ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.991ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010657783808)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[972.946ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.945ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010691338240)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[981.056ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.272ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010733281280)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[988.167ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.166ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010766835712)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[995.803ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.040ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010800390144)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1003.833ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.139ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010842333184)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1011.656ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.973ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010884276224)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1019.408ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.048ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010926219264)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1027.841ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.963ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555010963968000)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1036.545ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.019ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011001716736)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1041.758ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.255ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011031076864)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1050.400ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.110ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011068825600)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1058.167ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.264ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011106574336)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1064.657ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.263ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011144323072)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1070.954ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.191ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011177877504)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1065.338ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.007ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011219820544)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1023.492ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.309ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011253374976)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1024.949ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.955ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011291123712)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1039.041ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.029ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011324678144)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1039.484ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.901ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011366621184)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1043.357ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.835ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011395981312)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1059.628ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.942ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011433730048)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1056.904ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.938ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011467284480)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1066.988ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.836ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011500838912)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1073.618ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.902ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011530199040)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1082.402ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.895ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011563753472)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1090.453ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.105ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011605696512)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1099.230ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.840ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011643445248)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1108.702ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.843ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011676999680)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1123.524ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.862ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011702165504)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1116.549ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.765ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011735719936)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1128.434ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.931ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011765080064)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1130.586ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.042ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011798634496)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1132.979ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.010ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011827994624)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1138.011ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.762ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011857354752)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1145.960ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.932ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011890909184)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1167.120ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.986ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011928657920)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1164.185ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.898ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011958018048)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1170.527ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.839ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555011991572480)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1177.152ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.871ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012025126912)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1185.280ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.956ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012058681344)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1194.148ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.848ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012096430080)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1201.024ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.783ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012129984512)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1209.287ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.805ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012163538944)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1217.638ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.681ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012201287680)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1224.246ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.834ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012234842112)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1237.493ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.852ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012268396544)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1237.134ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.116ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012301950976)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1243.880ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.008ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012331311104)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1252.659ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.091ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012369059840)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1261.610ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.735ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012406808576)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1270.538ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.887ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012444557312)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1278.503ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.763ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012478111744)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1287.271ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.810ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012515860480)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1293.013ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.858ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012541026304)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1301.396ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.198ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012578775040)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1307.870ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.202ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012612329472)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1314.307ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.860ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012641689600)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1321.740ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.985ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012679438336)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1325.580ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.101ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012708798464)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1333.049ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.031ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012742352896)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1340.235ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.799ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012775907328)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1348.989ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.896ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012813656064)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1358.368ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[1.025ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012851404800)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1363.543ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.869ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012880764928)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1356.974ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.981ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012914319360)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1361.492ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.818ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012952068096)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1358.404ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.724ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555012994011136)
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136 SLOW SQL >= 1s
+[1352.741ms] [rows:0] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:40:59 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.802ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567555013031759872)
+
+2025/04/16 11:46:35 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[1.470ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:46:35 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[1.108ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:46:35 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.818ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567556420375941120)
+
+2025/04/16 11:46:41 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:83
+[0.905ms] [rows:1] SELECT v.*, s.stock as Stock, s.begin_time as begin_time, s.end_time as end_time FROM tb_voucher v LEFT JOIN tb_seckill_voucher s ON v.id = s.id AND v.type = 1 WHERE v.id =17
+
+2025/04/16 11:46:41 /home/doovvv/code/golang/doovvvDP/dal/model/voucher.go:136
+[0.833ms] [rows:1] UPDATE `tb_seckill_voucher` SET `stock`=stock - 1 WHERE id = 17 AND stock > 0
+
+2025/04/16 11:46:41 /home/doovvv/code/golang/doovvvDP/dal/model/voucherOrder.go:27
+[0.613ms] [rows:1] INSERT INTO `tb_voucher_order` (`user_id`,`voucher_id`,`pay_type`,`status`,`pay_time`,`use_time`,`refund_time`,`id`) VALUES (1010,17,1,1,NULL,NULL,NULL,567556445017477120)

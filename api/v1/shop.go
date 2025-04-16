@@ -1,37 +1,38 @@
 package v1
 
 import (
+	"fmt"
+	"strconv"
+	"time"
+
 	"doovvvDP/dal/model"
 	"doovvvDP/dal/mysql"
 	"doovvvDP/dal/redis"
 	"doovvvDP/dto"
 	"doovvvDP/utils"
 	"doovvvDP/utils/cacheClient"
-	"fmt"
-	"strconv"
-	"time"
 
 	"gorm.io/gorm"
 )
-func QueryShopById(id uint64) (result *dto.Result){
+
+func QueryShopById(id uint64) (result *dto.Result) {
 	result = &dto.Result{}
 
 	// shop,err := cacheClient.QueryWithPassThrough(utils.CACHE_SHOP_KEY,id,model.GetShopById,utils.CACHE_SHOP_TTL)
 
-	//互斥锁解决缓存击穿
+	// 互斥锁解决缓存击穿
 	// shop,err := QueryShopWithMutex(id)
 
-	//逻辑过期解决缓存击穿
-	shop,err := cacheClient.QueryWithLogicalExpire(utils.CACHE_SHOP_KEY,id,model.GetShopById,utils.CACHE_SHOP_TTL)
-	if err!= nil{
-		return result.Fail(fmt.Sprintf("查询商铺信息失败：%v",err))
+	// 逻辑过期解决缓存击穿
+	shop, err := cacheClient.QueryWithPassThrough(utils.CACHE_SHOP_KEY, id, model.GetShopById, utils.CACHE_SHOP_TTL)
+	if err != nil {
+		return result.Fail(fmt.Sprintf("查询商铺信息失败：%v", err))
 	}
-
 
 	return result.OkWithData(shop)
 }
 
-//互斥锁解决缓存击穿
+// 互斥锁解决缓存击穿
 // func QueryShopWithMutex(id int) (model.Shop,error){
 // 	//现在redis里面查询，如果存在直接返回
 // 	key := utils.CACHE_SHOP_KEY+strconv.Itoa(id)
@@ -99,7 +100,7 @@ func QueryShopById(id uint64) (result *dto.Result){
 
 // }
 
-//逻辑时间解决缓击穿（已经提前预热）
+// 逻辑时间解决缓击穿（已经提前预热）
 // func QueryShopWithLogicalExpire(id uint64) (model.Shop,error){
 // 	key := utils.CACHE_SHOP_KEY+strconv.FormatUint(id,10)
 // 	cacheShop,err := redis.RDB.Get(redis.RCtx,key).Result()
@@ -151,36 +152,36 @@ func QueryShopById(id uint64) (result *dto.Result){
 // 	return shop,nil
 // }
 
-func UpdateShop(shop model.Shop)*dto.Result{
+func UpdateShop(shop model.Shop) *dto.Result {
 	result := &dto.Result{}
 	id := shop.ID
-	if(id == 0){
+	if id == 0 {
 		return result.Fail("缺少商品id")
 	}
 	err := mysql.DB.Transaction(func(tx *gorm.DB) error {
 		err := tx.Save(&shop).Error
-		if err != nil{
+		if err != nil {
 			return err
 		}
-		//删除缓存
-		_,err = redis.RDB.Del(redis.RCtx,utils.CACHE_SHOP_KEY+strconv.FormatUint(id,10)).Result()
-		if(err != nil){
+		// 删除缓存
+		_, err = redis.RDB.Del(redis.RCtx, utils.CACHE_SHOP_KEY+strconv.FormatUint(id, 10)).Result()
+		if err != nil {
 			return err
 		}
 		return nil
 	})
-	if(err != nil){
+	if err != nil {
 		return result.Fail("事务执行错误")
 	}
-	//更新数据库
+	// 更新数据库
 	return result.Ok()
-}	
+}
 
-func SaveShop2Redis(id uint64,expireTime int64){
-	shop,err := model.GetShopById(id)
-	if err!= nil{
+func SaveShop2Redis(id uint64, expireTime int64) {
+	shop, err := model.GetShopById(id)
+	if err != nil {
 		return
 	}
-	//设置逻辑过期时间
-	cacheClient.SetWithLogicalExpire(utils.CACHE_SHOP_KEY+fmt.Sprintf("%v",id),shop,10*time.Second)
+	// 设置逻辑过期时间
+	cacheClient.SetWithLogicalExpire(utils.CACHE_SHOP_KEY+fmt.Sprintf("%v", id), shop, 10*time.Second)
 }

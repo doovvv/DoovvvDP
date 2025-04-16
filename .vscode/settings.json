@@ -1,3 +1,15 @@
+
 {
-    "marscode.chatLanguage": "cn"
-}
+    "marscode.chatLanguage": "cn",
+    "gopls": {
+      "formatting.gofumpt": true,
+      "staticcheck": true,
+      "ui.diagnostic.analyses": {
+        "unusedparams": true
+      }
+    },
+    "go.useLanguageServer": true,
+    "go.toolsEnvVars": {
+      "GOFLAGS": "-tags=dev"
+    }
+  }

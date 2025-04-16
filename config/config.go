@@ -21,6 +21,9 @@ type Config struct {
 		User         string `yaml:"user"`
 		Password     string `yaml:"password"`
 		DatabaseName string `yaml:"databaseName"`
+		MaxOpenConns int    `yaml:"maxOpenConns"`
+		MaxIdleConns int    `yaml:"maxIdleConns"`
+		MaxIdleTime  int    `yaml:"maxIdleTime"`
 	} `yaml:"mysqlConfig"`
 
 	RedisConfig struct {
@@ -31,10 +34,12 @@ type Config struct {
 	} `yaml:"redisConfig"`
 
 	LogConfig struct {
-		LogPath  string `yaml:"logPath"`
+		LogPath string `yaml:"logPath"`
 	} `yaml:"logConfig"`
 }
+
 var MyConfig Config
+
 func ConfigInit() {
 	// 读取 YAML 文件
 	data, err := os.ReadFile("/home/doovvv/code/golang/doovvvDP/config/config.yaml") // 请确保 config.yaml 路径正确
@@ -47,6 +52,4 @@ func ConfigInit() {
 	if err != nil {
 		log.Fatalf("Error unmarshaling YAML: %v", err)
 	}
-
-
 }

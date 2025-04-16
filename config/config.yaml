@@ -9,6 +9,9 @@ mysqlConfig:
   user: windows
   password: 123456
   databaseName: doovvvdp
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 300
 
 redisConfig:
   host: 127.0.0.1
