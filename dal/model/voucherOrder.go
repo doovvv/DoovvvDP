@@ -3,6 +3,8 @@ package model
 import (
 	"time"
 
+	"doovvvDP/dal/mysql"
+
 	"gorm.io/gorm"
 )
 
@@ -23,6 +25,15 @@ func (v *VoucherOrder) TableName() string {
 	return "tb_voucher_order"
 }
 
-func AddVoucherOrder(db *gorm.DB, voucherOrder VoucherOrder) error {
-	return db.Create(&voucherOrder).Error
+func AddVoucherOrder(db *gorm.DB, voucherOrder *VoucherOrder) error {
+	return db.Create(voucherOrder).Error
+}
+
+func CheckVoucherOrder(userId uint64, voucherId uint64) bool {
+	var count int64
+	err := mysql.DB.Model(&VoucherOrder{}).Where("user_id = ? AND voucher_id = ?", userId, voucherId).Count(&count).Error
+	if err != nil {
+		return false
+	}
+	return count > 0
 }

@@ -15,6 +15,7 @@ func init() {
 }
 
 func RouterInit() {
+	handler.VoucherHandlerInit()
 	r := gin.Default()
 	// 已弃用session
 	// 创建一个简单的 CookieStore, 用于存储 session
@@ -53,6 +54,10 @@ func RouterInit() {
 	voucherOrderRouter := authRouter.Group("/voucher-order")
 	{
 		voucherOrderRouter.POST("/seckill/:voucherId", handler.SeckillVoucher)
+	}
+	uploadRouter := r.Group("/upload")
+	{
+		uploadRouter.POST("/blog", handler.UploadFile)
 	}
 	r.Run(":8081")
 }

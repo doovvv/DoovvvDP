@@ -21,16 +21,6 @@ type IDWorker struct {
 	sequence      int64
 }
 
-var MyIdWorker *IDWorker
-
-func init() {
-	var err error
-	MyIdWorker, err = NewIdWorker(1)
-	if err != nil {
-		panic(err)
-	}
-}
-
 func NewIdWorker(workerID int64) (*IDWorker, error) {
 	if workerID < 0 || workerID > workerMax {
 		return nil, errors.New("worker ID out of range")

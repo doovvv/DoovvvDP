@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"doovvvDP/dal/mysql"
+	"doovvvDP/dal/redis"
 
 	"gorm.io/gorm"
 )
@@ -120,17 +121,22 @@ func AddSeckillVoucher(dtoVoucher DTOVoucher) error {
 			return fmt.Errorf("failed to save seckill voucher: %w", err)
 		}
 	}
-
+	// 增加优惠券的同时保存库存到redis
+	err := redis.RDB.Set(redis.RCtx, fmt.Sprintf("seckill:stock:%d", voucher.ID), dtoVoucher.Stock, -1).Err()
+	if err != nil {
+		tx.Rollback() // 如果 TbSeckillVoucher 保存失败，回滚事务
+		return fmt.Errorf("failed to save seckill voucher: %w", err)
+	}
 	// 提交事务
 	if err := tx.Commit().Error; err != nil {
 		return fmt.Errorf("failed to commit transaction: %w", err)
 	}
-
 	return nil
 }
 
 // 库存减一
 func DecreaseStock(db *gorm.DB, voucherId uint64) error {
+	// 乐观锁（添加version字段）
 	err := db.Model(&TbSeckillVoucher{}).
 		Where("id = ? AND stock > 0", voucherId).
 		Update("stock", gorm.Expr("stock - 1")).Error

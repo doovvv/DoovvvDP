@@ -6,9 +6,10 @@ import (
 	"doovvvDP/dal/redis"
 	"doovvvDP/router"
 )
+
 func main() {
 	config.ConfigInit()
 	mysql.Init()
 	redis.RedisInit()
 	router.RouterInit()
-} 
+}

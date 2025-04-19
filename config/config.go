@@ -10,9 +10,10 @@ import (
 // 定义配置结构体
 type Config struct {
 	MainConfig struct {
-		AppName string `yaml:"appName"`
-		Host    string `yaml:"host"`
-		Port    int    `yaml:"port"`
+		AppName  string `yaml:"appName"`
+		Host     string `yaml:"host"`
+		Port     int    `yaml:"port"`
+		WorkerId int    `yaml:"workerId"`
 	} `yaml:"mainConfig"`
 
 	MySQLConfig struct {

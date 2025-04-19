@@ -10,6 +10,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+func VoucherHandlerInit() {
+	v1.VoucherServiceInit()
+}
+
 func QueryVoucherByShopId(c *gin.Context) {
 	result := &dto.Result{}
 	shopIdStr, ok := (c.Params.Get("shopId"))
@@ -54,6 +58,7 @@ func SeckillVoucher(c *gin.Context) {
 				result.Fail("用户ID无效")
 			}
 			result = v1.SeckillVoucher(voucherId, userId)
+			// fmt.Println(result)
 		} else {
 			result.Fail("用户信息无效")
 		}
