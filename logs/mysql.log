@@ -15070,3 +15070,1356 @@
 
 2025/04/19 16:20:57 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:32
 [14.130ms] [rows:1] INSERT INTO `tb_user` (`phone`,`password`,`nick_name`,`icon`) VALUES ('17111111111','','user_taAHRYPtrF','')
+
+2025/04/21 09:17:13 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:24
+[55.067ms] [rows:1] SELECT * FROM `tb_user` WHERE phone = '13617693630' ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 09:18:14 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:27 Error 1146 (42S02): Table 'doovvvdp.blog' doesn't exist
+[4.017ms] [rows:0] INSERT INTO `blog` (`shop_id`,`user_id`,`title`,`images`,`content`,`liked`,`comments`,`create_time`,`update_time`) VALUES (0,1010,'test','/imgs/Figure_1.png','test abc',0,0,'2025-04-21 09:18:14.092','2025-04-21 09:18:14.092')
+
+2025/04/21 09:18:21 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:27 Error 1146 (42S02): Table 'doovvvdp.blog' doesn't exist
+[3.008ms] [rows:0] INSERT INTO `blog` (`shop_id`,`user_id`,`title`,`images`,`content`,`liked`,`comments`,`create_time`,`update_time`) VALUES (0,1010,'test','/imgs/Figure_1.png','test abc',0,0,'2025-04-21 09:18:21.111','2025-04-21 09:18:21.111')
+
+2025/04/21 09:19:14 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:27
+[14.846ms] [rows:1] INSERT INTO `tb_blog` (`shop_id`,`user_id`,`title`,`images`,`content`,`liked`,`comments`,`create_time`,`update_time`) VALUES (0,1010,'test','/imgs/Figure_1.png','test abc',0,0,'2025-04-21 09:19:14.909','2025-04-21 09:19:14.909')
+
+2025/04/21 09:39:16 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:33
+[3.276ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 09:39:16 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.350ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 09:39:17 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[9.043ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 10:29:53 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:41
+[5.871ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 10:29:53 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[3.456ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 10:29:53 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.385ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 10:29:53 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.280ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 10:29:53 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.305ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 10:29:53 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.439ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 10:31:28 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:34
+[1.323ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 10:31:28 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.546ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 10:31:29 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[3.596ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 10:32:12 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:34
+[0.599ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 6 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 10:32:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.377ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 10:32:12 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[0.694ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 10 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 11:10:52 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[12.435ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 11:10:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[4.542ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:10:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.501ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:10:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.511ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:10:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.494ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:10:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.497ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:10:55 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[54.636ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 11:10:55.12' WHERE id = 4
+
+2025/04/21 11:10:55 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.803ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:10:55 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.385ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:10:56 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[14.326ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 11:10:56.677' WHERE id =4
+
+2025/04/21 11:10:56 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.836ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:10:56 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.353ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:10:58 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[42.194ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 11:10:58.134' WHERE id = 4
+
+2025/04/21 11:10:58 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.737ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:10:58 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.398ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:24 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[4.024ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 11:22:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.257ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.391ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.326ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.589ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.325ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:26 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[44.772ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 11:22:26.587' WHERE id =4
+
+2025/04/21 11:22:26 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.673ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.712ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:27 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[42.071ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 11:22:27.906' WHERE id = 4
+
+2025/04/21 11:22:27 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.720ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:27 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.372ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:28 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[54.244ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 11:22:28.798' WHERE id =4
+
+2025/04/21 11:22:28 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.618ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:28 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.404ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:30 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[45.193ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 11:22:30.351' WHERE id = 5
+
+2025/04/21 11:22:30 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.762ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:30 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.493ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:31 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[37.109ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 11:22:31.051' WHERE id =5
+
+2025/04/21 11:22:31 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.776ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:31 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.388ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:51 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[46.649ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 11:22:51.798' WHERE id = 5
+
+2025/04/21 11:22:51 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.178ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:51 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.295ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:52 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[41.342ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 11:22:52.631' WHERE id =5
+
+2025/04/21 11:22:52 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.717ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.614ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:53 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[56.214ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 11:22:53.924' WHERE id = 4
+
+2025/04/21 11:22:53 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.835ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:53 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.655ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:22:54 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[45.831ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 11:22:54.518' WHERE id =4
+
+2025/04/21 11:22:54 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.751ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:22:54 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.402ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:23:24 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.974ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:23:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.788ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:23:24 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[4.506ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 11:23:44 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.908ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:23:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.705ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:23:48 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[51.503ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 11:23:48.838' WHERE id = 5
+
+2025/04/21 11:23:48 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.984ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:23:48 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.476ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 11:23:49 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.526ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 11:23:49 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.356ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:31 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[50.633ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:09:31.881' WHERE id = 5
+
+2025/04/21 12:09:31 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.996ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:09:31 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.894ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:34 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[14.483ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:09:34.815' WHERE id = 5
+
+2025/04/21 12:09:34 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.437ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:09:34 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.948ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:37 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[32.366ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:09:37.532' WHERE id = 4
+
+2025/04/21 12:09:37 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.923ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:09:37 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.526ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:40 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[44.874ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:09:40.409' WHERE id = 4
+
+2025/04/21 12:09:40 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.112ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:09:40 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.517ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:41 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[36.800ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:09:41.228' WHERE id = 4
+
+2025/04/21 12:09:41 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.674ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:09:41 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.430ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:41 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[36.058ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:09:41.761' WHERE id = 4
+
+2025/04/21 12:09:41 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.132ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:09:41 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.382ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:44 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[2.235ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 12:09:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.498ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.352ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.377ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.339ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:09:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.376ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:12 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[2.633ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 12:12:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.209ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.355ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.330ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.373ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.328ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:13 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[1.198ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 12:12:13 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.784ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:13 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.553ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:13 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.363ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:13 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.323ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:13 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.281ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:20 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[0.881ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 12:12:20 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.580ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:20 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.562ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:20 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.344ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:20 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.534ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:20 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.390ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:22 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[34.142ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 12:12:22.155' WHERE id =4
+
+2025/04/21 12:12:22 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.305ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:12:22 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.405ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:23 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[42.210ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 12:12:23.549' WHERE id =4
+
+2025/04/21 12:12:23 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.764ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:12:23 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.402ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:24 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[43.774ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 12:12:24.409' WHERE id =4
+
+2025/04/21 12:12:24 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.700ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:12:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.325ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:12:25 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[46.643ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 12:12:25.143' WHERE id =4
+
+2025/04/21 12:12:25 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.777ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:12:25 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.663ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:13:35 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[46.946ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:13:35.891' WHERE id = 4
+
+2025/04/21 12:13:35 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.264ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:13:35 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.127ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:24 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[1.729ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 12:14:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.305ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.372ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.399ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.334ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.372ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:26 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[40.230ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 12:14:26.807' WHERE id =4
+
+2025/04/21 12:14:26 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.221ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:14:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.446ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:28 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[42.154ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 12:14:28.364' WHERE id =5
+
+2025/04/21 12:14:28 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.809ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:14:28 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.355ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:29 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[38.649ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:14:29.475' WHERE id = 5
+
+2025/04/21 12:14:29 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.689ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:14:29 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.391ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:30 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[46.067ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 12:14:30.226' WHERE id =5
+
+2025/04/21 12:14:30 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.884ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:14:30 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.444ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:31 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[42.465ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 12:14:31.534' WHERE id = 4
+
+2025/04/21 12:14:31 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.658ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:14:31 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.420ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 12:14:32 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:53
+[36.650ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked -1,`update_time`='2025-04-21 12:14:32.16' WHERE id =4
+
+2025/04/21 12:14:32 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.794ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 12:14:32 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.392ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:38:18 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[22.161ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 14:38:18 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[4.592ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:38:18 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.435ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:38:18 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.255ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:38:18 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.230ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:38:18 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.317ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:38:41 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.693ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 23 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 14:38:41 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.495ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:38:41 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32 record not found
+[6.992ms] [rows:0] SELECT * FROM `tb_shop` WHERE id = 0 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 14:51:02 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[3.641ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 14:51:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[2.148ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:51:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.462ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:51:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.380ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:51:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.506ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:51:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.578ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:51:04 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.830ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 14:51:04 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.384ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:51:04 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[1.646ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 14:51:23 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[43.380ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 14:51:23.871' WHERE id = 5
+
+2025/04/21 14:51:23 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.946ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 14:51:23 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.364ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:51:26 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.590ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 14:51:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.327ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:51:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.578ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:28
+[32.120ms] [rows:1] SELECT * FROM `tb_user` WHERE phone = '13686869696' ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:44 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[1.378ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 14:52:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.473ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.412ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.319ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.315ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.312ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:48 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:48
+[34.489ms] [rows:1] UPDATE `tb_blog` SET `liked`=liked + 1,`update_time`='2025-04-21 14:52:48.575' WHERE id = 5
+
+2025/04/21 14:52:48 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.000ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 14:52:48 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.379ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:49 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.512ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 14:52:49 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.359ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:49 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.682ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 14:52:49 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.448ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:28:07 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[3.914ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 15:28:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.754ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:28:07 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[4.875ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 15:28:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[4.453ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/21 15:55:54 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[6.587ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 15:55:54 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.339ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:55:54 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[2.744ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/21 15:57:45 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[2.198ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 15:57:45 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[2.036ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:57:45 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[1.780ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/21 15:57:46 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[89.972ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1 AND follow_user_id =2
+
+2025/04/21 15:57:49 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:21
+[44.627ms] [rows:1] INSERT INTO `tb_follow` (`user_id`,`follow_user_id`,`create_time`) VALUES (1,2,'2025-04-21 15:57:49.85')
+
+2025/04/21 15:57:55 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:26
+[50.991ms] [rows:1] DELETE FROM `tb_follow` WHERE user_id = 1 AND follow_user_id = 2
+
+2025/04/21 15:58:21 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.243ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 23 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 15:58:21 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.512ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:58:21 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32 record not found
+[2.074ms] [rows:0] SELECT * FROM `tb_shop` WHERE id = 0 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 15:58:21 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[1.245ms] [rows:0] SELECT * FROM `tb_user` WHERE id in (NULL)
+
+2025/04/21 15:58:21 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[0.862ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =1010
+
+2025/04/21 15:58:39 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[2.376ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 15:58:39 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.884ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:58:39 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.360ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:58:39 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.317ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:58:39 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.309ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:58:39 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.310ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:58:43 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.925ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 23 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 15:58:43 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.489ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:58:43 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[0.741ms] [rows:0] SELECT * FROM `tb_user` WHERE id in (NULL)
+
+2025/04/21 15:58:43 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[0.665ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =1010
+
+2025/04/21 15:58:44 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:21
+[36.263ms] [rows:1] INSERT INTO `tb_follow` (`user_id`,`follow_user_id`,`create_time`) VALUES (1010,1010,'2025-04-21 15:58:44.688')
+
+2025/04/21 15:58:45 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:26
+[13.496ms] [rows:1] DELETE FROM `tb_follow` WHERE user_id = 1010 AND follow_user_id = 1010
+
+2025/04/21 15:58:58 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.783ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 15:58:58 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.638ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:58:58 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[0.782ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 15:58:58 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[4.275ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/21 15:58:58 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.480ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 15:59:00 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:21
+[11.709ms] [rows:1] INSERT INTO `tb_follow` (`user_id`,`follow_user_id`,`create_time`) VALUES (1010,2,'2025-04-21 15:59:00.378')
+
+2025/04/21 15:59:52 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[2.468ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 15:59:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.131ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:59:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.368ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:59:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.315ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:59:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.326ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 15:59:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.307ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:05:27 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[2.153ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 16:05:27 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.744ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:05:27 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[1.233ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/21 16:05:27 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[0.647ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 16:08:25 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[2.485ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:08:26 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[2.847ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 16:09:51 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.947ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:09:51 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.625ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:09:51 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.273ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 16:19:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[2.255ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:19:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.482ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:19:02 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.353ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 16:19:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.850ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:19:44 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.644ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 16:19:44 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.297ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 16:19:44 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:60
+[3.697ms] [rows:2] SELECT * FROM `tb_blog` WHERE user_id =2 LIMIT 10
+
+2025/04/21 20:43:26 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[13.551ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/21 20:43:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[3.181ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 20:43:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.472ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 20:43:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.248ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 20:43:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.181ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 20:43:26 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.251ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 20:43:31 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.244ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 20:43:31 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.514ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 20:43:31 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[3.229ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 20:43:31 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[4.067ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/21 20:43:31 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[4.494ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 20:43:33 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:26
+[5.905ms] [rows:1] DELETE FROM `tb_follow` WHERE user_id = 1010 AND follow_user_id = 2
+
+2025/04/21 20:43:35 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:21
+[9.890ms] [rows:1] INSERT INTO `tb_follow` (`user_id`,`follow_user_id`,`create_time`) VALUES (1010,2,'2025-04-21 20:43:35.09')
+
+2025/04/21 20:44:49 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[1.126ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 20:44:49 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.501ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 20:44:49 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[0.727ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/21 20:44:49 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.006ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1 AND follow_user_id =2
+
+2025/04/21 20:44:51 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:21
+[7.876ms] [rows:1] INSERT INTO `tb_follow` (`user_id`,`follow_user_id`,`create_time`) VALUES (1,2,'2025-04-21 20:44:51.452')
+
+2025/04/21 22:19:47 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[4.012ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 22:19:47 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[2.291ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 22:19:47 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[2.098ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/21 22:19:47 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[3.085ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 22:19:47 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.889ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 22:19:55 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.843ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 6 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/21 22:19:55 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.632ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 22:19:55 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[0.849ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 10 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/21 22:19:55 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[1.049ms] [rows:0] SELECT * FROM `tb_user` WHERE id in (NULL)
+
+2025/04/21 22:19:55 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.017ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =1
+
+2025/04/21 22:19:56 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.658ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 22:19:56 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.470ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 22:19:56 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:60
+[0.944ms] [rows:2] SELECT * FROM `tb_blog` WHERE user_id =1 LIMIT 10
+
+2025/04/21 22:19:56 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[3.765ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =1
+
+2025/04/21 22:20:38 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.373ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 22:20:38 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.553ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 22:20:38 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:60
+[3.342ms] [rows:2] SELECT * FROM `tb_blog` WHERE user_id =1 LIMIT 10
+
+2025/04/21 22:20:38 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.270ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =1
+
+2025/04/21 22:20:40 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[0.868ms] [rows:1] SELECT * FROM `tb_user` WHERE id in (2)
+
+2025/04/21 22:20:43 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.695ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 22:20:43 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.815ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/21 22:20:43 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:60
+[1.040ms] [rows:2] SELECT * FROM `tb_blog` WHERE user_id =2 LIMIT 10
+
+2025/04/21 22:20:43 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[0.356ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/21 22:20:45 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[0.639ms] [rows:0] SELECT * FROM `tb_user` WHERE id in (NULL)
+
+2025/04/22 10:26:30 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[18.013ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/22 10:26:30 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[5.820ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:26:30 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.483ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:26:30 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.357ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:26:30 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.299ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:26:30 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.041ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:26:49 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.807ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/22 10:26:49 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.290ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:26:49 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[3.791ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/22 10:26:49 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[3.086ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/22 10:28:33 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:28
+[1.279ms] [rows:1] SELECT * FROM `tb_user` WHERE phone = '13838411438' ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:28:34 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[1.245ms] [rows:5] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/22 10:28:34 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.578ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:28:34 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.307ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:28:34 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.258ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:28:34 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.255ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:28:34 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.282ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:28:37 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.793ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:29:39 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:30
+[45.358ms] [rows:1] INSERT INTO `tb_blog` (`shop_id`,`user_id`,`title`,`images`,`content`,`liked`,`comments`,`create_time`,`update_time`) VALUES (0,2,'test feed','/imgs/Screenshot 2025-03-25 233507.png','123',0,0,'2025-04-22 10:29:39.356','2025-04-22 10:29:39.356')
+
+2025/04/22 10:29:39 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:38
+[5.056ms] [rows:2] SELECT * FROM `tb_follow` WHERE follow_user_id =2
+
+2025/04/22 10:29:39 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.807ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:32:32 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:30
+[43.918ms] [rows:1] INSERT INTO `tb_blog` (`shop_id`,`user_id`,`title`,`images`,`content`,`liked`,`comments`,`create_time`,`update_time`) VALUES (0,2,'test feed','/imgs/Screenshot 2025-03-25 233507.png','123',0,0,'2025-04-22 10:32:32.532','2025-04-22 10:32:32.532')
+
+2025/04/22 10:32:32 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:38
+[1.473ms] [rows:2] SELECT * FROM `tb_follow` WHERE follow_user_id =2
+
+2025/04/22 10:32:32 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.959ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:33:52 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:30
+[45.768ms] [rows:1] INSERT INTO `tb_blog` (`shop_id`,`user_id`,`title`,`images`,`content`,`liked`,`comments`,`create_time`,`update_time`) VALUES (0,2,'test feed','/imgs/Screenshot 2025-03-25 233507.png','123',0,0,'2025-04-22 10:33:52.366','2025-04-22 10:33:52.366')
+
+2025/04/22 10:33:52 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:38
+[1.387ms] [rows:2] SELECT * FROM `tb_follow` WHERE follow_user_id =2
+
+2025/04/22 10:33:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[2.113ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:34:38 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[2.136ms] [rows:6] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/22 10:34:38 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.481ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:34:38 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.314ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:34:38 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.330ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:34:38 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.295ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:34:38 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.321ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:34:38 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.284ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:35:09 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:28
+[1.695ms] [rows:1] SELECT * FROM `tb_user` WHERE phone = '13617693630' ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:35:09 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[0.864ms] [rows:6] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/22 10:35:09 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.472ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:35:09 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.362ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:35:09 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.309ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:35:09 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.286ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:35:09 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.339ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:35:09 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.263ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 10:35:11 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.781ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:28
+[34.650ms] [rows:1] SELECT * FROM `tb_user` WHERE phone = '13617693630' ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:02 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[6.650ms] [rows:6] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/22 15:50:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.048ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.256ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.285ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.259ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.297ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:02 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.273ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:06 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.800ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/22 15:50:06 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.264ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:06 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[2.481ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/22 15:50:06 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[6.639ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 1 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/22 15:50:06 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[7.856ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/22 15:50:08 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.751ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:08 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.486ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:50:08 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[0.446ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/22 15:50:08 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:60
+[0.886ms] [rows:3] SELECT * FROM `tb_blog` WHERE user_id =2 LIMIT 10
+
+2025/04/22 15:57:48 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.519ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:57:52 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.797ms] [rows:1] SELECT * FROM `tb_blog` WHERE id IN (26)
+
+2025/04/22 15:57:52 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.258ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:07 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[0.761ms] [rows:6] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/22 15:58:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.312ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.206ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.228ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.241ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.226ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.194ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:10 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.584ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 4 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/22 15:58:10 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.323ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:10 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[0.719ms] [rows:0] SELECT * FROM `tb_user` WHERE id in (NULL)
+
+2025/04/22 15:58:10 /home/doovvv/code/golang/doovvvDP/dal/model/shop.go:32
+[2.470ms] [rows:1] SELECT * FROM `tb_shop` WHERE id = 4 ORDER BY `tb_shop`.`id` LIMIT 1
+
+2025/04/22 15:58:10 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[0.917ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/22 15:58:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.621ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.528ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:12 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[0.518ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/22 15:58:12 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:60
+[2.334ms] [rows:3] SELECT * FROM `tb_blog` WHERE user_id =2 LIMIT 10
+
+2025/04/22 15:58:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.474ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.208ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:12 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.192ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:14 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.599ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 15:58:15 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.702ms] [rows:1] SELECT * FROM `tb_blog` WHERE id IN (26)
+
+2025/04/22 15:58:15 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.249ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:17 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[0.977ms] [rows:6] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/22 16:01:17 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.659ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:17 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.192ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:17 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.246ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:17 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.222ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:17 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.254ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:17 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.255ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:19 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.809ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/22 16:01:19 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.258ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:19 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[1.624ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/22 16:01:19 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[1.603ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/22 16:01:21 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.460ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:21 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.476ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:21 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:60
+[2.300ms] [rows:3] SELECT * FROM `tb_blog` WHERE user_id =2 LIMIT 10
+
+2025/04/22 16:01:21 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[2.657ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/22 16:01:21 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.627ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:21 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.314ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:21 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.210ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:27 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:36
+[0.833ms] [rows:1] SELECT * FROM `tb_blog` WHERE id = 5 ORDER BY `tb_blog`.`id` LIMIT 1
+
+2025/04/22 16:01:27 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.226ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:01:27 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:50
+[0.766ms] [rows:2] SELECT * FROM `tb_user` WHERE id in (1010,1)
+
+2025/04/22 16:01:27 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:32
+[0.970ms] [rows:1] SELECT count(*) FROM `tb_follow` WHERE user_id =1010 AND follow_user_id =2
+
+2025/04/22 16:02:33 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:28
+[0.688ms] [rows:1] SELECT * FROM `tb_user` WHERE phone = '13838411438' ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:02:33 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:43
+[0.780ms] [rows:6] SELECT * FROM `tb_blog` ORDER BY liked desc LIMIT 10
+
+2025/04/22 16:02:33 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.286ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:02:33 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.261ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:02:33 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.234ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:02:33 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.239ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:02:33 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.261ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:02:33 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.288ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:02:51 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:30
+[13.055ms] [rows:1] INSERT INTO `tb_blog` (`shop_id`,`user_id`,`title`,`images`,`content`,`liked`,`comments`,`create_time`,`update_time`) VALUES (0,2,'1','/imgs/Screenshot 2025-03-25 192342.png','111',0,0,'2025-04-22 16:02:51.605','2025-04-22 16:02:51.605')
+
+2025/04/22 16:02:51 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:38
+[0.597ms] [rows:2] SELECT * FROM `tb_follow` WHERE follow_user_id =2
+
+2025/04/22 16:02:51 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.394ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:03:06 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:30
+[8.297ms] [rows:1] INSERT INTO `tb_blog` (`shop_id`,`user_id`,`title`,`images`,`content`,`liked`,`comments`,`create_time`,`update_time`) VALUES (0,2,'2','/imgs/Screenshot 2025-03-23 152422.png','222',0,0,'2025-04-22 16:03:06.898','2025-04-22 16:03:06.898')
+
+2025/04/22 16:03:06 /home/doovvv/code/golang/doovvvDP/dal/model/follow.go:38
+[0.348ms] [rows:2] SELECT * FROM `tb_follow` WHERE follow_user_id =2
+
+2025/04/22 16:03:07 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.536ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:03:14 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.398ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:03:15 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.760ms] [rows:1] SELECT * FROM `tb_blog` WHERE id IN (26)
+
+2025/04/22 16:03:15 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.239ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:03:17 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.580ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:03:19 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.695ms] [rows:1] SELECT * FROM `tb_blog` WHERE id IN (26)
+
+2025/04/22 16:03:19 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.235ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:03:32 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.614ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:03:34 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.625ms] [rows:1] SELECT * FROM `tb_blog` WHERE id IN (26)
+
+2025/04/22 16:03:34 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.312ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:04:10 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.601ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:04:11 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.487ms] [rows:1] SELECT * FROM `tb_blog` WHERE id IN (26)
+
+2025/04/22 16:04:11 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.211ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:04:24 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.516ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:04:25 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.569ms] [rows:1] SELECT * FROM `tb_blog` WHERE id IN (26)
+
+2025/04/22 16:04:25 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.327ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:05:07 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.612ms] [rows:0] SELECT * FROM `tb_blog` WHERE id IN (NULL)
+
+2025/04/22 16:05:09 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.537ms] [rows:0] SELECT * FROM `tb_blog` WHERE id IN (NULL)
+
+2025/04/22 16:05:10 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.499ms] [rows:0] SELECT * FROM `tb_blog` WHERE id IN (NULL)
+
+2025/04/22 16:12:55 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[1.293ms] [rows:1] SELECT * FROM `tb_user` WHERE id =1010 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:12:56 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.832ms] [rows:2] SELECT * FROM `tb_blog` WHERE id IN (28,27)
+
+2025/04/22 16:12:56 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.243ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:12:56 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.157ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:12:57 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.800ms] [rows:0] SELECT * FROM `tb_blog` WHERE id IN (NULL)
+
+2025/04/22 16:12:58 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.474ms] [rows:2] SELECT * FROM `tb_blog` WHERE id IN (28,27)
+
+2025/04/22 16:12:58 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.334ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:12:58 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.250ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:13:19 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.641ms] [rows:0] SELECT * FROM `tb_blog` WHERE id IN (NULL)
+
+2025/04/22 16:13:19 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.810ms] [rows:2] SELECT * FROM `tb_blog` WHERE id IN (28,27)
+
+2025/04/22 16:13:19 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.339ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:13:19 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.269ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:13:19 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.593ms] [rows:0] SELECT * FROM `tb_blog` WHERE id IN (NULL)
+
+2025/04/22 16:13:20 /home/doovvv/code/golang/doovvvDP/dal/model/blog.go:67
+[0.412ms] [rows:2] SELECT * FROM `tb_blog` WHERE id IN (28,27)
+
+2025/04/22 16:13:20 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.247ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1
+
+2025/04/22 16:13:20 /home/doovvv/code/golang/doovvvDP/dal/model/user.go:43
+[0.201ms] [rows:1] SELECT * FROM `tb_user` WHERE id =2 ORDER BY `tb_user`.`id` LIMIT 1

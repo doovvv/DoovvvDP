@@ -4,6 +4,9 @@ import (
 	"time"
 
 	"doovvvDP/dal/mysql"
+	"doovvvDP/utils"
+
+	"gorm.io/gorm"
 )
 
 type Blog struct {
@@ -20,10 +23,47 @@ type Blog struct {
 }
 
 func (Blog) TableName() string {
-	return "blog"
+	return "tb_blog"
 }
 
-func CreateBlog(blog Blog) error {
-	err := mysql.DB.Create(&blog).Error
+func CreateBlog(blog *Blog) error {
+	err := mysql.DB.Create(blog).Error
 	return err
+}
+
+func GetBlogById(id uint64) (Blog, error) {
+	var blog Blog
+	err := mysql.DB.Where("id = ?", id).First(&blog).Error
+	return blog, err
+}
+
+func QueryHotBlogs(current int) ([]Blog, error) {
+	var blogs []Blog
+	err := mysql.DB.Order("liked desc").
+		Limit(10).Offset(utils.MAX_PAGE_SIZE * (current - 1)).Find(&blogs).Error
+	return blogs, err
+}
+
+func LikeBlog(blogId uint64) error {
+	err := mysql.DB.Model(&Blog{}).Where("id = ?", blogId).Update("liked", gorm.Expr("liked + ?", 1)).Error
+	return err
+}
+
+func UnLikeBlog(blogId uint64) error {
+	err := mysql.DB.Model(&Blog{}).Where("id =?", blogId).Update("liked", gorm.Expr("liked -?", 1)).Error
+	return err
+}
+
+func QueryBlogOfUser(userId uint64, current int) ([]Blog, error) {
+	var blogs []Blog
+	err := mysql.DB.Where("user_id =?", userId).
+		Limit(10).Offset(utils.MAX_PAGE_SIZE * (current - 1)).Find(&blogs).Error
+	return blogs, err
+}
+
+func QueryBlogsByIDs(ids []uint64) ([]Blog, error) {
+	var blogs []Blog
+	// 这里没有调整blog的顺序
+	err := mysql.DB.Where("id IN ?", ids).Find(&blogs).Error
+	return blogs, err
 }

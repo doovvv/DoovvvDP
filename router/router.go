@@ -35,6 +35,8 @@ func RouterInit() {
 	authUserRouter := authRouter.Group("/user")
 	// authUserRouter.Use(middleware.LoginInterceptor())
 	{
+		authUserRouter.GET("/:id", handler.QueryUserById)
+		authUserRouter.GET("/info/:id", handler.QueryUserById)
 		authUserRouter.GET("/me", handler.Me)
 	}
 	shopRouter := r.Group("/shop")
@@ -58,6 +60,25 @@ func RouterInit() {
 	uploadRouter := r.Group("/upload")
 	{
 		uploadRouter.POST("/blog", handler.UploadFile)
+	}
+	blogRouter := r.Group("/blog")
+	{
+		blogRouter.POST("", handler.CreateBlog)
+		blogRouter.GET("/hot", handler.QueryHotBlogs)
+		blogRouter.GET("/:id", handler.QueryBlogById)
+		blogRouter.PUT("/like/:id", handler.LikeBlog)
+		blogRouter.GET("/likes/:id", handler.QueryBlogLikes)
+		blogRouter.GET("/of/user", handler.QueryBlogByUserId)
+	}
+	blogAuthRouter := authRouter.Group("/blog")
+	{
+		blogAuthRouter.GET("of/follow", handler.QueryBlogOfFollow)
+	}
+	followRouter := authRouter.Group("/follow")
+	{
+		followRouter.PUT("/:id/:isFollow", handler.FollowUser)
+		followRouter.GET("/or/not/:id", handler.QueryFollowByUserId)
+		followRouter.GET("/common/:id", handler.FollowCommons)
 	}
 	r.Run(":8081")
 }

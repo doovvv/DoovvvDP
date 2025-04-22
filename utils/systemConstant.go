@@ -2,6 +2,11 @@ package utils
 
 import "time"
 
+// frontend
+const (
+	MAX_PAGE_SIZE = 10
+)
+
 const (
 	USER_NICK_NAME_PREFIX = "user_"
 )
@@ -19,4 +24,7 @@ const (
 	CACHE_SHOP_TYPE_TTL  = 0
 	CACHE_SHOP_MUTEX_KEY = "lock:shop:"
 	SECKILL_STOCK_KEY    = "seckill:stock:"
+	LIKE_BLOG_KEY        = "blog:liked:"
+	FLLOW_KEY            = "follow:"
+	FEED_KEY             = "feed:"
 )
