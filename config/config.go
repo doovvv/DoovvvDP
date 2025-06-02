@@ -37,6 +37,14 @@ type Config struct {
 	LogConfig struct {
 		LogPath string `yaml:"logPath"`
 	} `yaml:"logConfig"`
+
+	KafkaConfig struct {
+		MessageMode string `yaml:"messageMode"`
+		HostPort    string `yaml:"hostPort"`
+		OrderTopic  string `yaml:"orderTopic"`
+		Partition   int    `yaml:"partition"`
+		Timeout     int    `yaml:"timeout"`
+	} `yaml:"kafkaConfig"`
 }
 
 var MyConfig Config

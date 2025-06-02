@@ -1,8 +1,10 @@
 package model
 
 import (
-	"doovvvDP/dal/mysql"
 	"time"
+
+	"doovvvDP/dal/mysql"
+	"doovvvDP/utils"
 )
 
 type Shop struct {
@@ -27,14 +29,37 @@ type Shop struct {
 func (Shop) TableName() string {
 	return "tb_shop"
 }
+
 func GetShopById(id uint64) (Shop, error) {
 	var shop Shop
 	err := mysql.DB.Where("id = ?", id).First(&shop).Error
-	//模拟重建时间
-	time.Sleep(200*time.Microsecond)
+	// 模拟重建时间
+	time.Sleep(200 * time.Microsecond)
 	return shop, err
 }
-func UpdateShopById(shop Shop)(error){
+
+func UpdateShopById(shop Shop) error {
 	err := mysql.DB.Save(&shop).Error
 	return err
+}
+
+func GetAllShops() ([]Shop, error) {
+	var shops []Shop
+	err := mysql.DB.Find(&shops).Error
+	return shops, err
+}
+
+func QueryShopByTypeId(typeId uint64, current int32) ([]Shop, error) {
+	var shops []Shop
+	err := mysql.DB.Where("type_id = ?", typeId).
+		Limit(utils.MAX_PAGE_SIZE).
+		Offset(int((current - 1) * utils.MAX_PAGE_SIZE)).
+		Find(&shops).Error
+	return shops, err
+}
+
+func QueryShopsByIds(ids []uint64) ([]Shop, error) {
+	var shops []Shop
+	err := mysql.DB.Where("id IN ?", ids).Find(&shops).Error
+	return shops, err
 }

@@ -1,6 +1,7 @@
 package v1
 
 import (
+	"context"
 	"fmt"
 	"os"
 	"strconv"
@@ -12,9 +13,10 @@ import (
 	"doovvvDP/dal/mysql"
 	"doovvvDP/dal/redis"
 	"doovvvDP/dto"
+	messagequeue "doovvvDP/messageQueue"
 	"doovvvDP/utils"
 
-	goredis "github.com/redis/go-redis/v9"
+	"github.com/segmentio/kafka-go"
 )
 
 var (
@@ -22,6 +24,9 @@ var (
 	MyIdWorker     *utils.IDWorker
 	// 阻塞队列，已弃用
 	// blockQueue *blockqueue.BlockingQueue
+
+	// kafka消息队列
+	kafkaQueue *messagequeue.KafkaService
 )
 
 func VoucherServiceInit() {
@@ -37,26 +42,26 @@ func VoucherServiceInit() {
 		panic(err)
 	}
 
+	// 初始化消息队列
+	kafkaQueue = messagequeue.NewKafkaService()
+	kafkaQueue.KafkaInit()
+
 	go func() {
 		for {
 			// 从消息队列中取出订单
-			list, err := redis.RDB.XReadGroup(redis.RCtx, &goredis.XReadGroupArgs{
-				Group:    "g1",
-				Consumer: "c1",
-				Streams:  []string{"stream.orders", ">"},
-				Count:    1,
-				Block:    2 * time.Second,
-			}).Result()
+			msg, err := kafkaQueue.OrderConsumer.ReadMessage(context.Background())
 			// 如果失败，继续循环
-			if err != nil || len(list) == 0 {
+			if err != nil {
+				fmt.Println(err.Error())
 				continue
 			}
-			record := list[0].Messages[0]
-			fmt.Println("从消息队列中取出订单：", record.Values)
-			// 解析订单
-			voucherId, _ := strconv.ParseUint(record.Values["voucherID"].(string), 10, 64)
-			userId, _ := strconv.ParseUint(record.Values["userID"].(string), 10, 64)
-			orderId, _ := strconv.ParseUint(record.Values["id"].(string), 10, 64)
+			fmt.Println("接收到消息：", string(msg.Value))
+			var voucherId, userId, orderId uint64
+			n, err := fmt.Sscanf(string(msg.Value), "voucherID:%d,userID:%d,id:%d", &voucherId, &userId, &orderId)
+			if err != nil || n != 3 {
+				fmt.Println(err.Error())
+				continue
+			}
 			voucherOrder := &model.VoucherOrder{
 				ID:        orderId,
 				UserID:    userId,
@@ -64,7 +69,10 @@ func VoucherServiceInit() {
 			}
 			handleVoucherOrder(voucherOrder)
 			// 如果成功就下单，并确认
-			redis.RDB.XAck(redis.RCtx, "stream.orders", "g1", record.ID)
+			err = kafkaQueue.OrderConsumer.CommitMessages(context.Background(), msg)
+			if err != nil {
+				continue
+			}
 
 		}
 	}()
@@ -84,6 +92,7 @@ func AddSeckillVoucher(voucher model.DTOVoucher) *dto.Result {
 
 func SeckillVoucher(voucherId uint64, userId uint64) *dto.Result {
 	result := &dto.Result{}
+	// 数据库查询秒杀券信息
 	voucher, err := model.QueryVoucherById(voucherId)
 	if err != nil {
 		return result.Fail("查询失败")
@@ -100,10 +109,12 @@ func SeckillVoucher(voucherId uint64, userId uint64) *dto.Result {
 	if err != nil {
 		return result.Fail("订单id生成错误")
 	}
-	// lua脚本向消息队列中添加订单
+	// lua脚本检测订单
+	// fmt.Println("voucherID:", voucherId, " userID:", userId, " id:", id)
 	tmp_r, err := redis.RDB.Eval(redis.RCtx, luaStockScript,
-		[]string{}, []string{fmt.Sprint(voucherId), fmt.Sprint(userId), fmt.Sprint(id)}).Result()
+		[]string{}, []string{fmt.Sprint(voucherId), fmt.Sprint(userId)}).Result()
 	if err != nil {
+		fmt.Println(err.Error())
 		return result.Fail("系统繁忙:" + err.Error())
 	}
 	r := tmp_r.(int64)
@@ -116,6 +127,14 @@ func SeckillVoucher(voucherId uint64, userId uint64) *dto.Result {
 			errStr = "您已经购买过该券"
 		}
 		return result.Fail(errStr)
+	}
+	// 往消息队列中添加订单
+	err = kafkaQueue.OrderProducer.WriteMessages(context.Background(), kafka.Message{
+		Key:   []byte(strconv.FormatUint(id, 10)),
+		Value: []byte(fmt.Sprintf("voucherID:%d,userID:%d,id:%d", voucherId, userId, id)),
+	})
+	if err != nil {
+		return result.Fail("系统繁忙:" + err.Error())
 	}
 	return result.OkWithData(id)
 }

@@ -12,6 +12,7 @@ import (
 	"doovvvDP/utils"
 	"doovvvDP/utils/cacheClient"
 
+	goredis "github.com/redis/go-redis/v9"
 	"gorm.io/gorm"
 )
 
@@ -184,4 +185,70 @@ func SaveShop2Redis(id uint64, expireTime int64) {
 	}
 	// 设置逻辑过期时间
 	cacheClient.SetWithLogicalExpire(utils.CACHE_SHOP_KEY+fmt.Sprintf("%v", id), shop, 10*time.Second)
+}
+
+func LoadShopData() {
+	// 从数据库中查询所有的店铺信息
+	shops, err := model.GetAllShops()
+	if err != nil {
+		return
+	}
+	// 将店铺信息写入到redis中
+	for _, shop := range shops {
+		key := utils.SHOP_GEO_KEY + strconv.FormatUint(shop.TypeID, 10)
+		loc := &goredis.GeoLocation{
+			Name:      strconv.FormatUint(shop.ID, 10),
+			Longitude: shop.X,
+			Latitude:  shop.Y,
+		}
+		_, err := redis.RDB.GeoAdd(redis.RCtx, key, loc).Result()
+		if err != nil {
+			return
+		}
+	}
+}
+
+func QueryShopByTypeId(typeId uint64, current int32, x float64, y float64) *dto.Result {
+	result := &dto.Result{}
+	// 判断是否需要根据坐标查询
+	if x == -1 || y == -1 {
+		// 不需要坐标查询，按数据库查询
+		shops, err := model.QueryShopByTypeId(typeId, current)
+		if err != nil {
+			return result.Fail("查询商铺信息失败")
+		}
+		return result.OkWithData(shops)
+	}
+	// 符合坐标查询，按redis查询
+	// 1.查询店铺id
+	key := utils.SHOP_GEO_KEY + strconv.FormatUint(typeId, 10)
+	ids, err := redis.RDB.GeoSearch(redis.RCtx, key, &goredis.GeoSearchQuery{
+		Longitude:  x,
+		Latitude:   y,
+		Radius:     5000, // 5km
+		RadiusUnit: "m",
+	}).Result()
+	if err != nil {
+		return result.Fail("查询商铺信息失败")
+	}
+	// 计算分页参数
+	start := (current - 1) * utils.MAX_PAGE_SIZE
+	if start >= int32(len(ids)) {
+		return result.OkWithData([]model.Shop{})
+	}
+	end := min(start+utils.MAX_PAGE_SIZE-1, int32(len(ids)))
+	ids = ids[start:end]
+	idInts := make([]uint64, len(ids))
+	for i, id := range ids {
+		idInt, err := strconv.ParseUint(id, 10, 64)
+		if err != nil {
+			return result.Fail("查询商铺信息失败")
+		}
+		idInts[i] = idInt
+	}
+	shops, err := model.QueryShopsByIds(idInts)
+	if err != nil {
+		return result.Fail("查询商铺信息失败")
+	}
+	return result.OkWithData(shops)
 }

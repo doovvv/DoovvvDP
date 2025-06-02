@@ -27,4 +27,6 @@ const (
 	LIKE_BLOG_KEY        = "blog:liked:"
 	FLLOW_KEY            = "follow:"
 	FEED_KEY             = "feed:"
+	SHOP_GEO_KEY         = "shop:geo:"
+	USER_SIGN_KEY        = "sign:"
 )

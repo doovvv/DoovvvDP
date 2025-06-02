@@ -69,3 +69,27 @@ func QueryUserById(c *gin.Context) {
 	result = v1.QueryUserById(idInt)
 	c.JSON(200, result)
 }
+
+func Sign(c *gin.Context) {
+	result := &dto.Result{}
+	userId, err := getUserId(c)
+	if err != nil {
+		result.Fail("未找到user信息")
+		c.JSON(200, result)
+		return
+	}
+	result = v1.Sign(userId)
+	c.JSON(200, result)
+}
+
+func SignCount(c *gin.Context) {
+	result := &dto.Result{}
+	userId, err := getUserId(c)
+	if err != nil {
+		result.Fail("未找到user信息")
+		c.JSON(200, result)
+		return
+	}
+	result = v1.SignCount(userId)
+	c.JSON(200, result)
+}

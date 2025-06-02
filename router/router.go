@@ -38,11 +38,14 @@ func RouterInit() {
 		authUserRouter.GET("/:id", handler.QueryUserById)
 		authUserRouter.GET("/info/:id", handler.QueryUserById)
 		authUserRouter.GET("/me", handler.Me)
+		authUserRouter.POST("/sign", handler.Sign)
+		authUserRouter.GET("/sign/count", handler.SignCount)
 	}
 	shopRouter := r.Group("/shop")
 	{
 		shopRouter.GET("/:id", handler.QueryShopById)
 		shopRouter.PUT("", handler.UpdateShop)
+		shopRouter.GET("/of/type", handler.QueryShopByTypeId)
 	}
 	shopTypeRouter := r.Group("/shop-type")
 	{

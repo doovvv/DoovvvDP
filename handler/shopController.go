@@ -34,3 +34,33 @@ func UpdateShop(c *gin.Context) {
 	result = v1.UpdateShop(shop)
 	c.JSON(200, result)
 }
+
+func QueryShopByTypeId(c *gin.Context) {
+	var result *dto.Result = &dto.Result{}
+	typeId, err := strconv.Atoi(c.Query("typeId"))
+	if err != nil {
+		result.Fail("数据错误")
+		c.JSON(200, result)
+		return
+	}
+	current, err := strconv.Atoi(c.DefaultQuery("current", "1"))
+	if err != nil {
+		result.Fail("数据错误")
+		c.JSON(200, result)
+		return
+	}
+	x, err := strconv.ParseFloat(c.DefaultQuery("x", "-1"), 64)
+	if err != nil {
+		result.Fail("数据错误")
+		c.JSON(200, result)
+		return
+	}
+	y, err := strconv.ParseFloat(c.DefaultQuery("y", "-1"), 64)
+	if err != nil {
+		result.Fail("数据错误")
+		c.JSON(200, result)
+		return
+	}
+	result = v1.QueryShopByTypeId(uint64(typeId), int32(current), x, y)
+	c.JSON(200, result)
+}
